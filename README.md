@@ -1,7 +1,7 @@
 mcdropdown
 ==========
 
-This plugin is an update of mcdropdown jQuery plug-in v 1.3.2 (http://www.givainc.com/labs/mcdropdown_jquery_plugin.htm)
+This plugin is an update of mcdropdown jQuery plug-in v 1.10.2 (http://www.givainc.com/labs/mcdropdown_jquery_plugin.htm)
 
 mcdropdown features:
 
@@ -17,4 +17,5 @@ mcdropdown works with jQuery version upto 1.6.2 only. I made some changes to wor
 Changes:
 - Replaced removed functions like curCSS(),andSelf()
 - Fixed bug for google chrome
+
 
