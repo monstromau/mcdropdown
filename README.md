@@ -19,3 +19,5 @@ Changes:
 - Fixed bug for google chrome
 
 
+Demo:
+- see the demo file which loads http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
