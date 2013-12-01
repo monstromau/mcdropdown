@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Giva Labs - mcDropdown jQuery Plug-in | Giva</title>
+
+	<link type="text/css" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" media="all" />
+	<link type="text/css" href="./css/docs.css" rel="stylesheet" media="all" />
+	<link type="text/css" href="./css/jquery.mcdropdown.min.css" rel="stylesheet" media="all" />
+
+	<!---// load jQuery from the GoogleAPIs CDN //--->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="jquery.mcdropdown.js"></script>
+	<script type="text/javascript" src="jquery.bgiframe.js"></script>
+
+	<script type="text/javascript">
+	<!--//
+	// on DOM ready
+	$(document).ready(function (){
+		$("#current_rev").html("v"+$.mcDropdown.version);
+        //$.mcDropdown.setDefaults ( {mouseintent: true });
+        $("#category").mcDropdown("#categorymenu");
+	});
+	//-->
+	</script>
+</head>
+
+<body>
+
+			<h1 class="company-h1">Giva Labs </h1>
+			<h2 class="company-h2">mcDropdown jQuery Plug-in <span id="current_rev"></span></h2>
+
+
+				Please select a category:<br />
+				<input type="text" name="category" id="category" value="" />
+			</p>
+			
+			<blockquote>
+				<strong>NOTE:</strong> Safari/Webkit has a <a href="http://blog.pengoworks.com/index.cfm/2008/3/17/Safari-CSS-hover-and-Adjacent-Sibling-Selector-Bug" target="_new">bug 
+				in CSS engine when using the :hover psuedo class with the adajacent sibling selector</a>. If you notice
+				weird artifacts after mousing over elements, it's related to this CSS bug.
+			</blockquote>
+
+			<ul id="categorymenu" class="mcdropdown_menu">
+				<li rel="1">
+					Arts &amp; Humanities
+					<ul>
+						<li rel="2">
+							Photography
+							<ul>
+								<li rel="3">
+									3D
+								</li>
+								<li rel="4">
+									Digital
+								</li>
+							</ul>
+						</li>
+						<li rel="5">
+							History
+						</li>
+						<li rel="6">
+							Literature
+						</li>
+					</ul>
+				</li>
+				<li rel="7">
+					Business &amp; Economy
+				</li>
+				<li rel="8">
+					Computers &amp; Internet
+				</li>
+				<li rel="9">
+					Education
+				</li>
+				<li rel="11">
+					Entertainment
+					<ul>
+						<li rel="12">
+							Movies
+						</li>
+						<li rel="13">
+							TV Shows
+						</li>
+						<li rel="14">
+							Music
+						</li>
+						<li rel="15">
+							Humor
+						</li>
+					</ul>
+				</li>
+				<li rel="10">
+					Health
+				</li>
+			</ul>
+			<!--// end example code //-->
+
+			<p>Click the icon to the right of the text box in order to see the widget in action. If you place the widget at the bottom of the viewport, you will notice that the widget automatically scrolls the page so that the entire menu appears on the screen. This is designed to reduce user frustration by making sure the user can actually use the control. No scrolling will take place if the widget can already display itself onscreen. </p>
+			<p>Another key usability feature the mcDropdown widget offers is keyboard entry. If you place the cursor inside the text box you can now use the keyboard to select an item. If an item is already selected, you will notice that placing focus on the input element causes the last child item to be automatically pre-selected. This allows for quickly changing the selected item if an incorrect value was entered. </p>
+			<p>We designed the keyboard entry so that only options found in the unordered list element can be selected. To accomplish this task, each keystroke is monitored and only allow valid characters are actually registered by the widget. </p>
+			<p>Also, as the user types a list of all possible matches will appear in the autocomplete list. This list is narrowed to only include exact matches. There's no need for a user to type the complete item name either, once the item the user wants is selected, they can either press [TAB], [ENTER], [RIGHT ARROW] or the [:] (which is the defined label delimiter) to select the list item. The user will then either be presented with any child items or they will move to the next position in the form. </p>
+			<p>Users can also use the [UP ARROW] and [DOWN ARROW] keys to select options that appear in the autocomplete list. See the <a href="#keyboard_usage">Keyboard Usage</a> section for more information. </p>
+
+
+
+</body>
+
+</html>
