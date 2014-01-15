@@ -877,6 +877,12 @@
 				var value = thismenu.getValue()
 					, name = displayString(value);
 
+				// if none is selected (text input is empty) clear the value
+        if( value[1] == '') {
+          thismenu.setValue('');
+          value = ['',''];
+        }
+
 				// announce event to both the new and original elements
 				$hidden.triggerHandler("update", [value, name, this]);
 				$self.triggerHandler("update", [value, name, this]);
